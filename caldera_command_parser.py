@@ -47,6 +47,6 @@ def clean_filename(filename):
     filename = filename.replace(':', '-').replace('/', '-')
     return filename
 
-caldera_directory = os.path.dirname(os.path.realpath(__file__))
+caldera_directory = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 plugins_directory = os.path.join(caldera_directory, 'plugins')
 find_and_process_yml_files(plugins_directory)
