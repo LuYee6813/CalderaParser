@@ -1,4 +1,5 @@
-# Quick use
+# caldera_command_parser
+## Quick use
 
 ```bash
 git clone https://github.com/LuYee6813/caldera_command_parser.git  
