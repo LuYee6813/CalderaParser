@@ -1,9 +1,9 @@
-# caldera_command_parser
+# CalderaParser
 ## Quick use
 
 ```bash
-git clone https://github.com/LuYee6813/caldera_command_parser.git  
-python3 caldera_command_parser/caldera_command_parser.py
+git clone https://github.com/LuYee6813/CalderaParser.git  
+python3 CalderaParser/CalderaParser.py
 ```
 
 ## Generate result
