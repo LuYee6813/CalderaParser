@@ -1,0 +1,4 @@
+$directory = "#{directory.sensitive.path}";
+New-Item -ItemType Directory -Force -Path $directory | Out-Null;
+Remove-Item -Path "$($directory)\*" -Recurse -EA silentlycontinue;
+Expand-Archive -LiteralPath "C:\Users\Public\sensitive_file_backups\#{directory.sensitive.backup}" -DestinationPath "$($directory)\";

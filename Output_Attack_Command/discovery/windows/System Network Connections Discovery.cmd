@@ -1,0 +1,1 @@
+netstat && net use && net sessions

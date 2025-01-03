@@ -1,0 +1,1 @@
+PowerShell -version 2 -command 'Invoke-Mimikatz'

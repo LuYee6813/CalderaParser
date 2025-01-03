@@ -1,0 +1,1 @@
+mkdir -p /var/spool/mail/copy; for file in /var/spool/mail/*; do   if [ "$(basename "$file")" != "copy" ];   then     cp -R "$file" /var/spool/mail/copy/;     if [ -f "/var/spool/mail/copy/$(basename "$file")" ]; then       echo "Modification for Atomic Red Test" >> "/var/spool/mail/copy/$(basename "$file")";     fi;   fi; done

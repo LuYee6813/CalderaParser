@@ -1,0 +1,1 @@
+copy-item -Path "\\127.0.0.1\C$\Windows\temp\Easter_Bunny.password" -Destination "$Env:TEMP\Easter_egg.password"

@@ -1,0 +1,1 @@
+echo "" | "PathToAtomicsFolder\..\ExternalPayloads\plink.exe" "atomic.local" -ssh  -l "root" -pw "pass" -m "PathToAtomicsFolder\T1083\src\esxi_file_discovery.txt"

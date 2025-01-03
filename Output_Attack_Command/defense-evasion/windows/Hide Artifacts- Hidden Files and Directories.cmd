@@ -1,0 +1,1 @@
+attrib.exe +h %temp%\T1564.001.txt

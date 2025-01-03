@@ -1,0 +1,1 @@
+copy "0655d1_WindowsServiceExample.exe" "C:\Program Files\windows_service.exe" && copy "0655d1_WindowsServiceExample.exe" "C:\program.exe" && sc create "Example Service" binpath= "C:\Program Files\windows_service.exe" Displayname= "Example Service" start= auto && sc start "Example Service"

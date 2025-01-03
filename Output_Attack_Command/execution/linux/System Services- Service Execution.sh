@@ -1,0 +1,1 @@
+psexec.py '/Administrator:P@ssw0rd1@127.0.0.1' 'whoami'

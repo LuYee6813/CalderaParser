@@ -1,0 +1,2 @@
+wmic process get executablepath,name,processid,parentprocessid >> $env:APPDATA\vmtools.log;
+cat $env:APPDATA\vmtools.log

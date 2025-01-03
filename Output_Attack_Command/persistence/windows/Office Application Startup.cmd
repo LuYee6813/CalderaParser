@@ -1,0 +1,1 @@
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\Level" /t REG_DWORD /d 1 /f && mkdir  %APPDATA%\Microsoft\Outlook\ >nul 2>&1 && echo "Atomic Red Team TEST" > %APPDATA%\Microsoft\Outlook\VbaProject.OTM

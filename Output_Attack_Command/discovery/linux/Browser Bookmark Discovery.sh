@@ -1,0 +1,1 @@
+find / -path "*/.config/chromium/*/Bookmarks" -exec echo {} >> /tmp/T1217-Chrome.txt \; cat /tmp/T1217-Chrome.txt 2>/dev/null

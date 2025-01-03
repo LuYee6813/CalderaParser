@@ -1,0 +1,1 @@
+if [ -f rootCA.crt ]; then : ; else if [ ! -f rootCA.key ]; then openssl genrsa -out rootCA.key 4096; fi; openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 365 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com" -out rootCA.crt; fi;  ;  sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" "rootCA.crt"

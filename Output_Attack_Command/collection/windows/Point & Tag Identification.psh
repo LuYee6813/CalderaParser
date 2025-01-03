@@ -1,0 +1,1 @@
+.\modbus_cli.exe #{modbus.all.deviceip} --port #{modbus.all.deviceport} read_ir #{modbus.read_ir.start} #{modbus.read_ir.count}

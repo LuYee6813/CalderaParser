@@ -1,0 +1,1 @@
+sudo cp "d6d565_T1546.014_emond.plist" /etc/emond.d/rules/T1546.014_emond.plist; sudo touch /private/var/db/emondClients/T1546.014

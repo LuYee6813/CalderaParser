@@ -1,0 +1,1 @@
+New-WebGlobalModule -Name DefaultDocumentModule_Atomic -Image %windir%\system32\inetsrv\defdoc.dll

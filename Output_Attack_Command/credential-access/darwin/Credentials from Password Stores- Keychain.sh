@@ -1,0 +1,1 @@
+security find-certificate -a -p > /tmp/certs.pem

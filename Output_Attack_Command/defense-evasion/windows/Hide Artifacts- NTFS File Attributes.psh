@@ -1,0 +1,1 @@
+if (!(Test-Path C:\Users\Public\Libraries\yanki -PathType Container)) {;     New-Item -ItemType Directory -Force -Path C:\Users\Public\Libraries\yanki;     }; Start-Process -FilePath "$env:comspec" -ArgumentList "/c,type,#{payload_path},>,`"#{ads_file_path}:#{ads_name}`""

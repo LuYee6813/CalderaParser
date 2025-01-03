@@ -1,0 +1,1 @@
+if [ $(command -v auditctl) ]; then : ; else (yum install auditd -y) || (apt-get install auditd -y) || (dnf install auditd -y); fi;  ;  auditctl -e 0

@@ -1,0 +1,1 @@
+Get-Content "PathToAtomicsFolder\T1001.002\bin\T1001.002.jpg", "$env:PUBLIC\Downloads\T1001.002.tarz" -Encoding byte -ReadCount 0 | Set-Content "$env:PUBLIC\Downloads\T1001.002New.jpg" -Encoding byte

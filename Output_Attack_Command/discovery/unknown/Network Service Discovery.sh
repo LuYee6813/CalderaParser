@@ -1,0 +1,1 @@
+docker build -t t1046 /root/AtomicRedTeam/atomics/T1046/src/; docker run --name t1046_container  -d -t t1046; docker exec t1046_container ./test.sh

@@ -1,0 +1,1 @@
+wmic group get name

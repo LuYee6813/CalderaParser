@@ -1,0 +1,1 @@
+New-ItemProperty -Path "HKLM:Software\Microsoft\Windows\CurrentVersion\Policies\System\Audit" -Name "ProcessCreationIncludeCmdLine_Enabled" -Value 0 -PropertyType DWORD -Force -ErrorAction Ignore

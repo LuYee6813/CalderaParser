@@ -1,0 +1,2 @@
+Import-Module .\powerview.ps1 -Force;
+Get-NetUser -AdminCount | ConvertTo-Json -Depth 1

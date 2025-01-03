@@ -1,0 +1,1 @@
+net use c: \\test\share && net share test=\\test\share /REMARK:"test share" /CACHE:No

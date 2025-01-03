@@ -1,0 +1,1 @@
+sudo insmod /tmp/T1547.006/T1547006.ko

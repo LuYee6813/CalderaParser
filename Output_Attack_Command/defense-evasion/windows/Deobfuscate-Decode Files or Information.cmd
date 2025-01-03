@@ -1,0 +1,1 @@
+copy %windir%\system32\certutil.exe %temp%\tcm.tmp && %temp%\tcm.tmp -encode C:\Windows\System32\calc.exe %temp%\T1140_calc2.txt && %temp%\tcm.tmp -decode %temp%\T1140_calc2.txt %temp%\T1140_calc2_decoded.exe

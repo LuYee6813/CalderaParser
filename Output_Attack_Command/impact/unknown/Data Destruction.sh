@@ -1,0 +1,1 @@
+gcloud config set project atomic-test-1; gcloud storage buckets delete gs://atomic-red-team-bucket

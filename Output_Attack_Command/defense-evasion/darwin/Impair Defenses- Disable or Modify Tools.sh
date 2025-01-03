@@ -1,0 +1,1 @@
+sudo launchctl unload /Library/LaunchDaemons/at.obdev.littlesnitchd.plist

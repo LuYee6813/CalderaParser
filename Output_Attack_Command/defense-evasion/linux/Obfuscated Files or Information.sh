@@ -1,0 +1,1 @@
+if [ -e "/tmp/encoded.dat" ]; then : ; else if [ "$(uname)" = 'FreeBSD' ]; then cmd="b64encode -r -"; else cmd="base64"; fi; echo "echo Hello from the Atomic Red Team && uname -v" | $cmd > /tmp/encoded.dat; fi;  ;  if [ "$(uname)" = 'FreeBSD' ]; then cmd="b64decode -r"; else cmd="base64 -d"; fi; cat /tmp/encoded.dat | $cmd > /tmp/art.sh; chmod +x /tmp/art.sh; /tmp/art.sh

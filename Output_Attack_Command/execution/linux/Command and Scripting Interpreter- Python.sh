@@ -1,0 +1,1 @@
+which_python=$(which python || which python3 || which python3.9 || which python2); $which_python -c "import pty;pty.spawn('/bin/sh')"; exit; $which_python -c "import pty;pty.spawn('/bin/bash')"; exit

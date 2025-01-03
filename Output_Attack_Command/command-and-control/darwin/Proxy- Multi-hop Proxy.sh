@@ -1,0 +1,1 @@
+if [ -x "$(command -v tor --version)" ]; then : ; else if [ ! -x "$(command -v brew --version)" ]; then /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh keystroke return)"; fi; brew install tor; fi;  ;  osascript -e 'tell application "Terminal" to do script "tor"'

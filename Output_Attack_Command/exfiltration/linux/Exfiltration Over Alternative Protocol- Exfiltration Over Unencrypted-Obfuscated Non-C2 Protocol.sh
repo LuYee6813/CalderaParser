@@ -1,0 +1,1 @@
+[ "$(uname)" = 'FreeBSD' ] && alias python3=python3.9; if [ $(which python3) ]; then cd /tmp; python3 -m http.server 9090 & PID=$!; sleep 10; kill $PID; unset PID; fi

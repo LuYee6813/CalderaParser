@@ -1,0 +1,1 @@
+net user art-test /add && net user art-test #{password} && net localgroup administrators art-test /add

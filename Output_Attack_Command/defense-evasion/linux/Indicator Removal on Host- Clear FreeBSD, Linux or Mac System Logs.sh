@@ -1,0 +1,1 @@
+cat /dev/null > /var/log/messages; cat /dev/zero > /var/lol/messages

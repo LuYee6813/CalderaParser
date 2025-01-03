@@ -1,0 +1,1 @@
+cp 741a31_test_upx /tmp/packed_bin && /tmp/packed_bin

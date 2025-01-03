@@ -1,0 +1,1 @@
+copy %SystemRoot%\System32\cscript.exe %APPDATA%\notepad.exe /Y && cmd.exe /c %APPDATA%\notepad.exe /B

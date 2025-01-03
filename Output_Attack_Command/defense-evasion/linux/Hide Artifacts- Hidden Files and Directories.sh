@@ -1,0 +1,1 @@
+mkdir /var/tmp/.hidden-directory; echo "T1564.001" > /var/tmp/.hidden-directory/.hidden-file

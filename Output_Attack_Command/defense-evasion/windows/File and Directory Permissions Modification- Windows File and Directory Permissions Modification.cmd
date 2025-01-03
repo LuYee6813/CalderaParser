@@ -1,0 +1,1 @@
+mkdir %temp%\T1222.001_attrib_2 >nul 2>&1 && echo T1222.001_attrib1 >> %temp%\T1222.001_attrib_2\T1222.001_attrib1.txt && echo T1222.001_attrib2 >> %temp%\T1222.001_attrib_2\T1222.001_attrib2.txt && attrib.exe +h %temp%\T1222.001_attrib_2\T1222.001_attrib1.txt && attrib.exe +h %temp%\T1222.001_attrib_2\T1222.001_attrib2.txt

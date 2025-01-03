@@ -1,0 +1,1 @@
+df -aH; smbutil view -g //computer1; showmount computer1

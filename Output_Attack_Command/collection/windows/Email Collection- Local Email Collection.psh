@@ -1,0 +1,1 @@
+powershell -executionpolicy bypass -command "PathToAtomicsFolder\T1114.001\src\Get-Inbox.ps1" -file $env:TEMP\mail.csv

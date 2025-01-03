@@ -1,0 +1,1 @@
+mkdir ~/Library/Mail/copy; cp -R ~/Library/Mail/* ~/Library/Mail/copy; rm -rf ~/Library/Mail/copy/*

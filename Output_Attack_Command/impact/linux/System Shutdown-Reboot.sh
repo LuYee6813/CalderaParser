@@ -1,0 +1,1 @@
+halt --reboot

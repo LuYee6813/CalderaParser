@@ -1,0 +1,1 @@
+$which_7z a -ppasswd /tmp/passwd.zip /etc/passwd

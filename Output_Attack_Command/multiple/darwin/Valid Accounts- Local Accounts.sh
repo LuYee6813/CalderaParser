@@ -1,0 +1,1 @@
+dsenableroot; dsenableroot -u art-tester -p art-tester -r art-root

@@ -1,0 +1,1 @@
+ldapsearch -H ldap://#{domain}.#{top_level_domain}:389 -x -D

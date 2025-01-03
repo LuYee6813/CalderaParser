@@ -1,0 +1,1 @@
+Stop-Process -Id #{host.pid.unauthorized} -Force

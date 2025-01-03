@@ -1,0 +1,1 @@
+tasklist.exe && sc query && sc query state= all

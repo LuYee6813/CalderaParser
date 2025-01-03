@@ -1,0 +1,1 @@
+if import -help > /dev/null 2>&1; then : ; else pkg install -y ImageMagick7; fi;  ;  import -window root /tmp/T1113_desktop.png

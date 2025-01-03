@@ -1,0 +1,1 @@
+sudo /tmp/T1547006_iokit_loader; kextstat 2>/dev/null | grep SoftRAID; sudo kextunload /Library/Extensions/SoftRAID.kext

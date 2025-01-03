@@ -1,0 +1,1 @@
+$notepad = Start-Process notepad -passthru; Start-Process "$PathToAtomicsFolder\T1055.003\bin\InjectContext.exe"; Start-Sleep -Seconds 5; Stop-Process $notepad.id

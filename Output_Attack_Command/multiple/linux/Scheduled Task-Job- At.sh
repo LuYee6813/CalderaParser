@@ -1,0 +1,1 @@
+echo "echo Hello from Atomic Red Team" | at now + 1 minute

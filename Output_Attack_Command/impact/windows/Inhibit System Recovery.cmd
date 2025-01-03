@@ -1,0 +1,1 @@
+wbadmin delete catalog -quiet

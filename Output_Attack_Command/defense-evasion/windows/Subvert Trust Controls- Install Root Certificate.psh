@@ -1,0 +1,1 @@
+certutil -addstore my $env:Temp\rootCA2.cer

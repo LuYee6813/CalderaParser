@@ -1,0 +1,1 @@
+%windir%\system32\inetsrv\appcmd.exe install module /name:DefaultDocumentModule_Atomic /image:%windir%\system32\inetsrv\defdoc.dll

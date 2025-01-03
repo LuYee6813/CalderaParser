@@ -1,0 +1,1 @@
+kubectl create -f $PathtoAtomicsFolder/T1609/src/busybox.yaml -n default; sleep 3; kubectl exec -n default busybox -- uname

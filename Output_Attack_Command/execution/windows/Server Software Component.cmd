@@ -1,0 +1,1 @@
+PathToAtomicsFolder\..\ExternalPayloads\pscp.exe -pw pass 8585f6_atomicvibes.vib root@atomic.local:/tmp && echo "" | "PathToAtomicsFolder\..\ExternalPayloads\plink.exe" "atomic.local" -ssh  -l "root" -pw "pass" -m "94e443_esxi_vibinstall.txt"

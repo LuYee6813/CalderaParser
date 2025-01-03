@@ -1,0 +1,1 @@
+Mount-DiskImage -ImagePath "0f959a_FeelTheBurn.iso" -StorageType ISO -Access ReadOnly; $keep = Get-Volume -FileSystemLabel "TestIso"; $driveLetter = ($keep | Get-Volume).DriveLetter; invoke-item "$($driveLetter):\hello.exe"

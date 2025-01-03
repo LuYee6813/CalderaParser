@@ -1,0 +1,2 @@
+Compress-Archive -Path #{host.dir.staged} -DestinationPath #{host.dir.staged}.zip -Force;
+sleep 1; ls #{host.dir.staged}.zip | foreach {$_.FullName} | select

@@ -1,0 +1,1 @@
+if (-not (Test-Path "PathToAtomicsFolder\..\ExternalPayloads\T1070-2.txt")) { New-Item "PathToAtomicsFolder\..\ExternalPayloads\T1070-2.txt" -Force } ; echo "1234567890" > "PathToAtomicsFolder\..\ExternalPayloads\T1070-2.txt"; fsutil  file setZeroData offset=0 length=10 "PathToAtomicsFolder\..\ExternalPayloads\T1070-2.txt"

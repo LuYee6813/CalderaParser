@@ -1,0 +1,2 @@
+Import-Module .\powerview.ps1;
+Get-NetLocalGroupMember -ComputerName #{remote.host.fqdn}

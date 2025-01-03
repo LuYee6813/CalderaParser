@@ -1,0 +1,2 @@
+& "C:\Program Files\7-Zip\7z.exe" a "#{host.dir.staged}.7z" "#{host.dir.staged}\*" "-p#{host.archive.password}" | Out-Null;
+sleep 1; ls #{host.dir.staged}.7z | foreach {$_.FullName} | select

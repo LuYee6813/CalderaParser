@@ -1,0 +1,1 @@
+systeminfo && reg query HKLM\SYSTEM\CurrentControlSet\Services\Disk\Enum

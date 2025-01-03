@@ -1,0 +1,1 @@
+Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -ParticipateInCEIP:$false -Confirm:$false ; Connect-VIServer -Server atomic.local -User root -Password pass; Get-AdvancedSetting -Entity atomic.local -Name 'Security.AccountLockFailures' | Set-AdvancedSetting -Value '0' -Confirm:$false; Disconnect-VIServer -Confirm:$false

@@ -1,0 +1,1 @@
+if (pkg info -x samba &>/dev/null) > /dev/null; then : ; else (which pkg && pkg install -y samba413); fi;  ;  smbstatus --shares

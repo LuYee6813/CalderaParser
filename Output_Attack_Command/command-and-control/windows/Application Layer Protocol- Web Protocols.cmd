@@ -1,0 +1,1 @@
+C:\Windows\System32\Curl.exe -s -A "HttpBrowser/1.0" -m3 www.google.com >nul 2>&1 && C:\Windows\System32\Curl.exe -s -A "Wget/1.9+cvs-stable (Red Hat modified)" -m3 www.google.com >nul 2>&1 && C:\Windows\System32\Curl.exe -s -A "Opera/8.81 (Windows NT 6.0; U; en)" -m3 www.google.com >nul 2>&1 && C:\Windows\System32\Curl.exe -s -A "*<|>*" -m3 www.google.com >nul 2>&1

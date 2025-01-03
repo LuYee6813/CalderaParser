@@ -1,0 +1,1 @@
+if [ "$(sysctl -n hw.hv_vendor)" != "" ]; then echo "Virtualization Environment detected"; fi

@@ -1,0 +1,1 @@
+New-Service -Name "AtomicTestService_PowerShell" -BinaryPathName "411da5_AtomicService.exe"; Start-Service -Name "AtomicTestService_PowerShell"

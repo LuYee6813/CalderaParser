@@ -1,0 +1,1 @@
+"PathToAtomicsFolder\..\ExternalPayloads\remcom.exe" \\localhost /user:Administrator /pwd:P@ssw0rd1 cmd.exe

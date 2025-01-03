@@ -1,0 +1,1 @@
+echo [InternetShortcut] > %temp%\T1547.009_modified_shortcut.url && echo URL=C:\windows\system32\calc.exe >> %temp%\T1547.009_modified_shortcut.url && %temp%\T1547.009_modified_shortcut.url

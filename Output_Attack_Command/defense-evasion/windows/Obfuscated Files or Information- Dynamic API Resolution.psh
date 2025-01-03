@@ -1,0 +1,1 @@
+Start-Process "2f0ffd_ninja_syscall1.exe"; Start-Sleep -Seconds 7; if (Test-Path "C:\Users\Default\AppData\Local\Temp\hello.log") { Remove-Item "C:\Users\Default\AppData\Local\Temp\hello.log" -Force; Write-Host "[+] hello.log removed." }

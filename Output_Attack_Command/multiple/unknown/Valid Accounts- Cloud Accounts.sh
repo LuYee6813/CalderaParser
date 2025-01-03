@@ -1,0 +1,1 @@
+gcloud config set project atomic-test-1; gcloud iam roles create AtomicRedTeamRole --description="Atomic Red Team Custom IAM Role" --permissions=iam.serviceAccounts.get --project=atomic-test-1

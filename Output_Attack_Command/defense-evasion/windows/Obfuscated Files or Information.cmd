@@ -1,0 +1,1 @@
+"PathToAtomicsFolder\..\ExternalPayloads\temp_T1027.zip\T1027.exe"

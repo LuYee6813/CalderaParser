@@ -1,0 +1,1 @@
+if [ -e  a932ec_T1027-004-test.go ]; then : ; else wget https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1027.004/src/T1027-004-test.go -O a932ec_T1027-004-test.go; fi;  ;  go run a932ec_T1027-004-test.go

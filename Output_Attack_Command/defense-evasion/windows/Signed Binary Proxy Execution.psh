@@ -1,0 +1,1 @@
+if (-not (Test-Path C:\test)) {; New-Item -Path C:\test -ItemType Directory; } else {; Write-Host "Directory C:\test already exists." }; Copy-Item -Path "C:\windows\system32\customshellhost.exe" -Destination "C:\test\customshellhost.exe" -Force; Copy-Item -Path "C:\windows\system32\calc.exe" -Destination "C:\test\explorer.exe" -Force; C:\test\customshellhost.exe

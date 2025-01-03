@@ -1,0 +1,1 @@
+sudo truncate -s 0 /var/log/system.log; sudo truncate --size=0 /var/log/system.log

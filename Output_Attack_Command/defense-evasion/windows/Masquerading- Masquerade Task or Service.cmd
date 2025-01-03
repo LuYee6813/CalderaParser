@@ -1,0 +1,1 @@
+schtasks /create /ru system /sc daily /tr "cmd /c powershell.exe -ep bypass -file c:\T1036.004_NonExistingScript.ps1" /tn win32times /f && schtasks /query /tn win32times

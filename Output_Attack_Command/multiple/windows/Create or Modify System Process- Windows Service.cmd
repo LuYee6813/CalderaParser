@@ -1,0 +1,1 @@
+sc.exe \\localhost create AtomicTestService_CMD binPath= "411da5_AtomicService.exe" start=auto type=Own && sc.exe \\localhost start AtomicTestService_CMD

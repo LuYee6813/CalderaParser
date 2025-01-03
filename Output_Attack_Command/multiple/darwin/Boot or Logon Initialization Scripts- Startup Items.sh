@@ -1,0 +1,1 @@
+sudo touch /Library/StartupItems/EvilStartup.plist

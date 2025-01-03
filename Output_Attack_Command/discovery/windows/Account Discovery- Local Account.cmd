@@ -1,0 +1,1 @@
+net user && dir c:\Users\ && cmdkey.exe /list && net localgroup "Users" && net localgroup

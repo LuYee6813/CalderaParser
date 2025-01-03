@@ -1,0 +1,1 @@
+DYLD_INSERT_LIBRARIES=/tmp/T1574006MOS.dylib /Applications/Firefox.app/Contents/MacOS/firefox

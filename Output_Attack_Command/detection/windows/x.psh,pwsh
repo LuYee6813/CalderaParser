@@ -1,0 +1,1 @@
+Get-NetTCPConnection -RemotePort "#{remote.port.unauthorized}" -EA silentlycontinue | where-object { write-host $_.OwningProcess }

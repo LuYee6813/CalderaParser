@@ -1,0 +1,1 @@
+Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -ParticipateInCEIP:$false -Confirm:$false ; Connect-VIServer -Server atomic.local -User root -Password pass; (Get-EsxCli -VMHost atomic.local -V2).software.acceptance.set.Invoke(@{level = "CommunitySupported"}); Disconnect-VIServer -Confirm:$false

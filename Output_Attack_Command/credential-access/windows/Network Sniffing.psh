@@ -1,0 +1,13 @@
+$path = "$ENV:UserProfile\Desktop\pcap.etl";
+New-NetEventSession -Name "PCAP" -CaptureMode SaveToFile -LocalFilePath $path;
+Add-NetEventProvider -Name "Microsoft-Windows-TCPIP" -SessionName "PCAP";
+Start-NetEventSession -Name "PCAP";
+Start-Sleep -s 60;
+Stop-NetEventSession -Name "PCAP";
+if (Test-Path $path) {
+  echo $path;
+  exit 0;
+} else {
+  echo "Failed to generate PCAP file.";
+  exit 1;
+};

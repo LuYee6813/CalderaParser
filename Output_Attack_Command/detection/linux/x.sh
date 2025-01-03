@@ -1,0 +1,10 @@
+directory="#{directory.sensitive.path}";
+if [ -d $directory ];
+  then tar -czf /tmp/dir_sens_comp -C $directory .;
+  hash=$(sha256sum /tmp/dir_sens_comp | cut -d' ' -f1);
+  rm -f /tmp/dir_sens_comp;
+  if [ "$hash" != "#{directory.sensitive.hash}" ];
+    then echo $directory;
+  fi;
+else echo $directory;
+fi;

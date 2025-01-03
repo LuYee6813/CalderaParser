@@ -1,0 +1,1 @@
+nltest /domain_trusts && nltest /trusted_domains

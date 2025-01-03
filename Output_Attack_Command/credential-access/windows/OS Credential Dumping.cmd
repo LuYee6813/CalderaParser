@@ -1,0 +1,1 @@
+"PathToAtomicsFolder\..\ExternalPayloads\gsecdump.exe" -a

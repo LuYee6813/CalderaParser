@@ -1,0 +1,2 @@
+echo 'Malicious file' > C:\Users\Public\malicious;
+(Get-FileHash C:\Users\Public\malicious).Hash > C:\Users\Public\malicious_files.txt

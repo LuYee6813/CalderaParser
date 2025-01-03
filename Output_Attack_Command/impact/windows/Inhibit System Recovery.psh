@@ -1,0 +1,1 @@
+Get-WmiObject Win32_Shadowcopy | ForEach-Object {$_.Delete();}

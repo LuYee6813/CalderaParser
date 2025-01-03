@@ -1,0 +1,1 @@
+ntdsutil "set dsrm password" "sync from domain account %username%" "q" "q"

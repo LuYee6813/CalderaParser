@@ -1,0 +1,1 @@
+which_python=`which python || which python3`; $which_python -c "import bz2;input_file=open('/etc/passwd','rb');content=input_file.read();input_file.close();bz2content=bz2.compress(content,compresslevel=9);output_file=open('/tmp/passwd.bz2','w+');output_file.write(str(bz2content));output_file.close();"

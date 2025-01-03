@@ -1,0 +1,1 @@
+#{msi_exe} /q /#{action} "#{msi_payload}"

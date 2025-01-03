@@ -1,0 +1,1 @@
+docker build -t t1612  $PathtoAtomicsFolder/T1612/src/; docker run --name t1612_container  -d -t t1612; docker exec t1612_container ./test.sh

@@ -1,0 +1,1 @@
+sudo echo osascript -e 'tell app "Finder" to display dialog "Hello World"' >> /etc/rc.common

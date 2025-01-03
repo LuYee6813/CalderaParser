@@ -1,0 +1,5 @@
+.\file_search.ps1 -Extensions '#{windows.included.extensions}' -ExcludedExtensions '#{windows.excluded.extensions}'
+ -Directories '#{windows.included.directories}' -ExcludedDirectories '#{windows.excluded.directories}'
+ -AccessedCutoff #{file.last.accessed} -ModifiedCutoff #{file.last.modified}
+ -SearchStrings '#{file.sensitive.content}' -StagingDirectory '#{windows.staging.location}'
+ -SafeMode $#{safe.mode.enabled} -PseudoExtension #{pseudo.data.identifier}

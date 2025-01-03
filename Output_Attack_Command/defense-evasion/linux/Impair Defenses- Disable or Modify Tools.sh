@@ -1,0 +1,1 @@
+sudo systemctl stop falcon-sensor.service; sudo systemctl disable falcon-sensor.service

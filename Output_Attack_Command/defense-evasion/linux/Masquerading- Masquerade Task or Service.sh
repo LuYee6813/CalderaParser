@@ -1,0 +1,1 @@
+/tmp/T1036_004_prctl_rename & ps; TMP=`ps | grep totally_legit`; if [ -z "${TMP}" ] ; then echo "renamed process NOT FOUND in process list" && exit 1; fi; exit 0

@@ -1,0 +1,1 @@
+az login; $userprincipalname = "atomicredteam@yourdomain.com"; $username = "atomicredteam"      ; $password = "reallylongcredential12345ART-ydsfghsdgfhsdgfhgsdhfg"; az ad user create --display-name $username --password $password --user-principal-name $userprincipalname; az ad user list --filter "displayname eq 'atomicredteam'"

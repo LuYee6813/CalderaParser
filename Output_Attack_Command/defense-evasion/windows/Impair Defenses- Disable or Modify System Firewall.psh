@@ -1,0 +1,1 @@
+Copy-Item "f7ce09_AtomicTest.exe" -Destination "C:\Users\$env:UserName" -Force; netsh advfirewall firewall add rule name="Atomic Test" dir=in action=allow program="C:\Users\$env:UserName\AtomicTest.exe" enable=yes

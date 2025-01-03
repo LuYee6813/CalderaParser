@@ -1,0 +1,1 @@
+PROMPT_COMMAND='history -a >(tee -a ~/.bash_history |logger -t "$USER[$$] $SSH_CONNECTION ")'; echo "\$PROMPT_COMMAND=$PROMPT_COMMAND"; tail /var/log/syslog

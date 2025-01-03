@@ -1,0 +1,1 @@
+echo quit | telnet google.com 8081; exit 0

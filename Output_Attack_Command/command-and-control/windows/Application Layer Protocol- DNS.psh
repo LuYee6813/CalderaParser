@@ -1,0 +1,1 @@
+Set-Location "PathToAtomicsFolder"; .\T1071.004\src\T1071-dns-domain-length.ps1 -Domain 127.0.0.1.nip.io -Subdomain atomicredteamatomicredteamatomicredteamatomicredteamatomicredte -QueryType TXT

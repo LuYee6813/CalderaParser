@@ -1,0 +1,1 @@
+set DOTNET_STARTUP_HOOKS="80410d_preloader.dll" && dotnet -h > nul && echo.

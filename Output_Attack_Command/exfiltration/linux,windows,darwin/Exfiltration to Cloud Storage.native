@@ -1,0 +1,1 @@
+s3upload "#{host.dir.compress}" "#{s3.source.region}" "#{s3.source.name}" "aws-#{paw}-compressed" 45s

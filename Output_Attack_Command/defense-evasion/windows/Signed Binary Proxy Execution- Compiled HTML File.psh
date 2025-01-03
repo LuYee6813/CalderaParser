@@ -1,0 +1,1 @@
+$RequiredModule = Get-Module -Name AtomicTestHarnesses -ListAvailable; if (-not $RequiredModule) {Install-Module -Name AtomicTestHarnesses -Scope CurrentUser -Force};  ;  Invoke-ATHCompiledHelp -HHFilePath $env:windir\hh.exe -CHMFilePath Test.chm

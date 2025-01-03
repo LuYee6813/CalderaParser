@@ -1,0 +1,1 @@
+"PathToAtomicsFolder\..\ExternalPayloads\PsExec.exe" \\localhost -accepteula -c C:\Windows\System32\cmd.exe

@@ -1,0 +1,1 @@
+netsh trace start capture=yes tracefile=%temp%\trace.etl maxsize=10

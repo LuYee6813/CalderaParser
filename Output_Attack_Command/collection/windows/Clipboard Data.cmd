@@ -1,0 +1,1 @@
+dir | clip && echo "T1115" > %temp%\T1115.txt && clip < %temp%\T1115.txt

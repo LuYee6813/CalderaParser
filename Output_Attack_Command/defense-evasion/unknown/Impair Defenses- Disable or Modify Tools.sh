@@ -1,0 +1,1 @@
+detectorId=$(aws guardduty create-detector --enable --region "us-east-1" | grep -oP '(?<="DetectorId": ")[^"]*'); aws guardduty update-detector --no-enable --detector-id $detectorId; aws guardduty delete-detector --detector-id $detectorId

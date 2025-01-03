@@ -1,0 +1,1 @@
+curl -F 'file=@3945c9_artifact' -F 'maxDownloads=1' -F 'autoDelete=true' https://file.io/

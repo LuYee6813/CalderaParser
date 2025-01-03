@@ -1,0 +1,1 @@
+cp /bin/sh /tmp/crond; echo 'sleep 5' | /tmp/crond

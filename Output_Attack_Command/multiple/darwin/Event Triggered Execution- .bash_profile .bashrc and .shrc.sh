@@ -1,0 +1,1 @@
+echo 'echo "Hello from Atomic Red Team T1546.004" > /tmp/T1546.004' >> ~/.bash_profile

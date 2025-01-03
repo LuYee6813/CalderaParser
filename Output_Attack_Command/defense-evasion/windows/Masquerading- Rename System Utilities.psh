@@ -1,0 +1,1 @@
+copy "$env:ComSpec" ($env:TEMP + "\svchost.exe"); $myT1036_003 = (Start-Process -PassThru -FilePath ($env:TEMP + "\svchost.exe")).Id; Stop-Process -ID $myT1036_003

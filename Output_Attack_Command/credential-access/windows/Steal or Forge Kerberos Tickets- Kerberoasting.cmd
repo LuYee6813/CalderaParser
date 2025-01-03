@@ -1,0 +1,1 @@
+setspn -T %USERDNSDOMAIN% -Q */*

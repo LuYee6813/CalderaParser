@@ -1,0 +1,1 @@
+reg add "hklm\system\currentcontrolset\control\print\monitors\AtomicRedTeam" /v "Driver" /d "dba276_PortMonitor.dll" /t REG_SZ /f

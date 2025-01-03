@@ -1,0 +1,1 @@
+launchctl submit -l evil -- /System/Applications/Calculator.app/Contents/MacOS/Calculator

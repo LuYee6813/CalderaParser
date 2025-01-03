@@ -1,0 +1,1 @@
+Add-Type -AssemblyName System.IdentityModel; $ComputerFQDN=$env:LogonServer.trimStart('\') + "." + $env:UserDnsDomain; New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentList "HTTP/$ComputerFQDN"

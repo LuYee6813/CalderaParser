@@ -1,0 +1,1 @@
+$PWord = ConvertTo-SecureString -String; $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList; if((Get-ADUser;   Remove-ADGroupMember -Identity "Domain Admins" -Members; } else{;     write-host "Error - Make sure #{remove_user} is in the domain admins group" -foregroundcolor Red; }

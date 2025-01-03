@@ -1,0 +1,1 @@
+TEST=$(echo $HISTFILE); echo $HISTFILE; export HISTFILE="/dev/null"; if [ $(echo $HISTFILE) == "/dev/null" ]; then echo "\$HISTFILE is /dev/null"; fi

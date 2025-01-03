@@ -1,0 +1,1 @@
+./mission.go -duration 60 -extension .caldera -dir '/'

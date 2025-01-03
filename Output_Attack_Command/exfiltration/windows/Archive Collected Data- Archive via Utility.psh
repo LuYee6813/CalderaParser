@@ -1,0 +1,1 @@
+tar -czf #{host.dir.git}.tar.gz -C #{host.dir.git} *; Write-Host #{host.dir.git}.tar.gz; exit 0;

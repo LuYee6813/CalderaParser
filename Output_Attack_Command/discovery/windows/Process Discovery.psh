@@ -1,0 +1,2 @@
+tasklist /m  >> $env:APPDATA\vmtool.log;
+cat $env:APPDATA\vmtool.log

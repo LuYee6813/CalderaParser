@@ -1,0 +1,1 @@
+if [ -x "$(command -v tor --version)" ]; then : ; else (which apt && sudo apt-get -y install tor) || (which pkg && pkg install -y tor); fi;  ;  [ "$(uname)" = 'FreeBSD' ] && sysrc tor_enable="YES" && service tor start || sudo systemctl start tor

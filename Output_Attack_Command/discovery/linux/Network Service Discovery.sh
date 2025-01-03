@@ -1,0 +1,1 @@
+for port in {1..65535}; do (2>/dev/null echo >/dev/tcp/192.168.1.1/$port) && echo port $port is open ; done

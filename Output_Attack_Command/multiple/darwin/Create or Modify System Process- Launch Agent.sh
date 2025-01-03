@@ -1,0 +1,1 @@
+if [ ! -d ~/Library/LaunchAgents ]; then mkdir ~/Library/LaunchAgents; fi; sudo cp a42d6f_atomicredteam_T1543_001.plist ~/Library/LaunchAgents/com.atomicredteam.plist; sudo launchctl load -w ~/Library/LaunchAgents/com.atomicredteam.plist

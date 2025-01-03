@@ -1,0 +1,1 @@
+net user /add "T1136.001_CMD" "T1136.001_CMD!"

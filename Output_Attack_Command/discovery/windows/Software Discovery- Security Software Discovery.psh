@@ -1,0 +1,1 @@
+wmic /NAMESPACE:\\root\SecurityCenter2 PATH AntiVirusProduct GET /value

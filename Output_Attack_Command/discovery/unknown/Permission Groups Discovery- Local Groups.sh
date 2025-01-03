@@ -1,0 +1,1 @@
+docker build -t t1069 $PathtoAtomicsFolder/T1069.001/src/; docker run --name t1069_container  -d -t t1069; docker exec t1069_container ./test.sh

@@ -1,0 +1,2 @@
+get-process >> $env:APPDATA\vmtools.log;
+cat $env:APPDATA\vmtools.log

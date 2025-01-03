@@ -1,0 +1,1 @@
+mkdir %temp%\T1119_command_prompt_collection >nul 2>&1 && dir c: /b /s .docx | findstr /e .docx && for /R c:\ %f in (*.docx) do copy /Y %f %temp%\T1119_command_prompt_collection

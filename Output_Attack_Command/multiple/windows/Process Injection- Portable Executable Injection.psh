@@ -1,0 +1,1 @@
+Start-Process "971b85_RedInjection.exe"; Start-Sleep -Seconds 7; Get-Process -Name Notepad -ErrorAction SilentlyContinue | Stop-Process -Force

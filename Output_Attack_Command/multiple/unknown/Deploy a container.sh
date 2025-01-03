@@ -1,0 +1,1 @@
+docker build -t t1610 $PathtoAtomicsFolder/T1610/src/; docker run --name t1610_container --rm -itd t1610 bash /tmp/script.sh

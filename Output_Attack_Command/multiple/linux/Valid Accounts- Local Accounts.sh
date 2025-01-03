@@ -1,0 +1,1 @@
+password=$(openssl passwd -1 art); ([ "$(uname)" = 'Linux' ] && useradd --shell /bin/bash --create-home --password $password art) || (pw useradd art -g wheel -s /bin/sh && (echo $password | pw mod user testuser1 -h 0)); su art -c "whoami; exit"

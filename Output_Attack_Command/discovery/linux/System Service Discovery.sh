@@ -1,0 +1,1 @@
+if [ "$(uname)" = 'FreeBSD' ]; then service -e; else systemctl --type=service; fi; 

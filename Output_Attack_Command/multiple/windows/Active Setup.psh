@@ -1,0 +1,1 @@
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{C9E9A340-D1F1-11D0-821E-444553540600}" "StubPath" "#{payload}" -Force; & $env:SYSTEMROOT\system32\runonce.exe /AlternateShellStartup

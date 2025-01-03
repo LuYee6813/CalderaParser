@@ -1,0 +1,1 @@
+copy "a25c19_hello.js" %TEMP%\hello.js && C:\Windows\Microsoft.NET\Framework\v4.0.30319\jsc.exe %TEMP%\hello.js

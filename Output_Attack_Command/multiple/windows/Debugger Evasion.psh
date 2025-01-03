@@ -1,0 +1,1 @@
+$debuggerProcesses = Get-Process | Where-Object { $_.ProcessName -match "dbg" -or $_.ProcessName -match "debug" }; $debuggingFlags = [System.Diagnostics.Debugger]::IsAttached

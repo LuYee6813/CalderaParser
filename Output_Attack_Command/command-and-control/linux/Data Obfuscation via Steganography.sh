@@ -1,0 +1,1 @@
+cat "PathToAtomicsFolder/script.sh" | base64 | xxd -p | sed 's/../& /g' | xargs -n1 | xxd -r -p | cat "PathToAtomicsFolder/image.jpg" - > "PathToAtomicsFolder/evil_image.jpg"; strings "PathToAtomicsFolder/evil_image.jpg" | tail -n 1 | base64 -d | sh

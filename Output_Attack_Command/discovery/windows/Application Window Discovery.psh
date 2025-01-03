@@ -1,0 +1,3 @@
+$x = Get-Process | Where-Object {$_.MainWindowTitle -ne ""} | Select-Object MainWindowTitle;
+$a = New-Object -com "Shell.Application"; $b = $a.windows() | select-object LocationName;
+write-host ($x | Format-List | Out-String) ($b | Format-List | Out-String)

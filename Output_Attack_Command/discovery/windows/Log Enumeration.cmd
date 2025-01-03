@@ -1,0 +1,1 @@
+wevtutil enum-logs

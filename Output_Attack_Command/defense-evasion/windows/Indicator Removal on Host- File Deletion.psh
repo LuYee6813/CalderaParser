@@ -1,0 +1,7 @@
+$startupClass = Get-CimClass -ClassName Win32_ProcessStartup;
+$startupInfo = New-CimInstance -CimClass $startupClass -Property @{ShowWindow = 0} -ClientOnly;
+$processClass = Get-CimClass -ClassName Win32_Process;
+Invoke-CimMethod -CimClass $processClass -MethodName Create -Arguments @{
+    Commandline = 'cmd.exe /c "timeout /nobreak /t 10 >nul 2>nul & del /f #{location}"';
+    ProcessStartupInformation = [CimInstance]$startupInfo
+};

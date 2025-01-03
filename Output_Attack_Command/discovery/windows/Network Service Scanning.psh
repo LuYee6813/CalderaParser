@@ -1,0 +1,7 @@
+Import-Module ./basic_scanner.ps1;
+$ports = @(22, 53, 80, 445);
+Get-NetIPConfiguration | ?{$_.NetAdapter.Status -ne "Disconnected"} | Get-NetIPaddress -AddressFamily IPv4 | %{
+    $ipv4 = $_.IPAddress;
+    $prefixLength = $_.PrefixLength;
+    Scan-Netrange -ipv4 $ipv4 -prefixLength $prefixLength -ports $ports;
+};

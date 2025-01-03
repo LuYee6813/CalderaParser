@@ -1,0 +1,1 @@
+odbcconf.exe /S /A {REGSVR "#{dll_payload}"}

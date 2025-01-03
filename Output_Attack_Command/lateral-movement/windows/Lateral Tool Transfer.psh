@@ -1,0 +1,1 @@
+New-SmbMapping -RemotePath '\\example.com\sales' -TransportType QUIC -SkipCertificateCheck; copy 'C:\path\to\file.txt' 'Z:\'

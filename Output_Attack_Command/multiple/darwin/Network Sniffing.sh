@@ -1,0 +1,1 @@
+sudo /tmp/t1040_macos_pcapdemo -f -i en0 -t 3

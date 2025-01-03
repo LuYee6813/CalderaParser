@@ -1,0 +1,1 @@
+docker build -t t1613 $PathtoAtomicsFolder/T1613/src/; docker run --name t1613_container -d -t t1613; docker ps; docker stats --no-stream; docker inspect $(docker ps -l -q --filter ancestor=t1613)

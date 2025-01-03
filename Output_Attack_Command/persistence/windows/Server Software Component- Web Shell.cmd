@@ -1,0 +1,1 @@
+xcopy /I /Y "PathToAtomicsFolder\T1505.003\src" C:\inetpub\wwwroot

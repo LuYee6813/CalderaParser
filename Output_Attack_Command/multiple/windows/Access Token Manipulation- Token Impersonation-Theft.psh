@@ -1,0 +1,1 @@
+cd "PathToAtomicsFolder\..\ExternalPayloads"; Start-Process .\BadPotato.exe notepad.exe; Start-Sleep -Second 20; Stop-Process -Name "notepad" -force -erroraction silentlycontinue; Stop-Process -Name "BadPotato" -force -erroraction silentlycontinue

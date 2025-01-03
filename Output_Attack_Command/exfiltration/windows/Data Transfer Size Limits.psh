@@ -1,0 +1,29 @@
+& "C:\Program Files\7-Zip\7z.exe" a "#{host.dir.staged}.7z" "#{host.dir.staged}\*" '-p#{host.archive.password}' | Out-Null;
+sleep 2;
+$Archive = Get-Item -Path "#{host.dir.staged}.7z";
+$StageDir = "#{host.dir.staged}";
+$BaseName = $StageDir + "\calderachunk";
+$UpperBound = [int32]"#{file.size.chunk}";
+$Content = [IO.File]::OpenRead($Archive);
+$buff = New-Object byte[] $UpperBound;
+$Bytes = $idx = 0;
+try {
+    do {
+        $Bytes = $Content.Read($buff, 0, $buff.Length);
+        if ($Bytes -gt 0) {
+            $ChunkName = "{0}{1}" -f ($BaseName, $idx.ToString().PadLeft(3,'0'));
+            $ChunkFile = [IO.File]::OpenWrite($ChunkName);
+            try {
+                $ChunkFile.Write($buff, 0, $Bytes);
+            } finally {
+                $ChunkFile.Close();
+            }
+        }
+        $idx ++;
+    } while ($Bytes -gt 0)
+}
+finally {
+    $Content.Close();
+}
+Remove-Item $Archive;
+Get-ChildItem -Path "$StageDir\calderachunk*" | foreach {$_.FullName} | Select-Object;

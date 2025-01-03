@@ -1,0 +1,1 @@
+osascript 998e96_add_login_item.osa

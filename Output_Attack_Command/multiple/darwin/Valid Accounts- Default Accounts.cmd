@@ -1,0 +1,1 @@
+sudo sysadminctl -guestAccount on

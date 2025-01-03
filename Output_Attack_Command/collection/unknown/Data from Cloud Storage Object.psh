@@ -1,0 +1,1 @@
+import-module "PathToAtomicsFolder\..\ExternalPayloads\Invoke-EnumerateAzureBlobs.ps1"; Invoke-EnumerateAzureBlobs -base secure -permutations "PathToAtomicsFolder\..\ExternalPayloads\permutations.txt" -outputfile "$env:temp\T1530Test1.txt"

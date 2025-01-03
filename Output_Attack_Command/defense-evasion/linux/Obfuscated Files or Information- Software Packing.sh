@@ -1,0 +1,1 @@
+cp cc5b6f_test_upx_header_changed /tmp/packed_bin && /tmp/packed_bin

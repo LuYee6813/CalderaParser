@@ -1,0 +1,1 @@
+Start-Process powershell.exe -WindowStyle hidden calc.exe

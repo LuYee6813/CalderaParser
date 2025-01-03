@@ -1,0 +1,1 @@
+cp b1d66c_reopen_loginwindow_calc.plist ~/Library/Preferences/ByHost/com.apple.loginwindow.plist

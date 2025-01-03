@@ -1,0 +1,1 @@
+$file = Get-Item $env:temp\T1564.001-9.txt -Force; $file.attributes='Hidden'

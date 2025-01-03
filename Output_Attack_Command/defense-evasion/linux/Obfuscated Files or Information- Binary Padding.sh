@@ -1,0 +1,1 @@
+if [ -f /tmp/evil-binary ]; then : ; else cp /bin/ls /tmp/evil-binary; fi;  ;  dd if=/dev/zero bs=1 count=1 >> /tmp/evil-binary; dd if=/dev/random bs=1 count=1 >> /tmp/evil-binary; dd if=/dev/urandom bs=1 count=1 >> /tmp/evil-binary

@@ -1,0 +1,2 @@
+netstat -anto;
+Get-NetTCPConnection

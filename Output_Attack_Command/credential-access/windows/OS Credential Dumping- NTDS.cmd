@@ -1,0 +1,1 @@
+wmic /node:"localhost" shadowcopy call create Volume=C:\

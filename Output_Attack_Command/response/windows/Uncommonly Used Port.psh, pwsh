@@ -1,0 +1,2 @@
+New-NetFirewallRule -DisplayName "Block out-bound UDP traffic to port #{remote.port.unauthorized} from PID #{host.pid.unauthorized}" -Group "Caldira" -Direction Outbound -Protocol UDP -Action Block -RemotePort #{remote.port.unauthorized};
+New-NetFirewallRule -DisplayName "Block out-bound TCP traffic to port #{remote.port.unauthorized} from PID #{host.pid.unauthorized}" -Group "Caldira" -Direction Outbound -Protocol TCP -Action Block -RemotePort #{remote.port.unauthorized};

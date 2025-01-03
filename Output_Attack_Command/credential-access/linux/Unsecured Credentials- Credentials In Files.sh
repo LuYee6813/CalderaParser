@@ -1,0 +1,1 @@
+grep -ri password /; exit 0

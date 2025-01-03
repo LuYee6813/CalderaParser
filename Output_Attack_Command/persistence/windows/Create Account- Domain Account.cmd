@@ -1,0 +1,1 @@
+net user "ANONYMOUS  LOGON" "T1136_pass123!" /add /domain

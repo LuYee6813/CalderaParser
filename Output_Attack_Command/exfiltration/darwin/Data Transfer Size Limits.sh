@@ -1,0 +1,1 @@
+if [ ! -f /tmp/T1030/T1030_urandom ]; then if [ ! -d /tmp/T1030 ]; then mkdir -p /tmp/T1030; touch /tmp/T1030/safe_to_delete; fi; dd if=/dev/urandom of=/tmp/T1030/T1030_urandom bs=25000000 count=1; fi;  ;  cd /tmp/T1030; split -b 5000000 T1030_urandom; ls -l /tmp/T1030

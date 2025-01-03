@@ -1,0 +1,1 @@
+killall 'Google Chrome'; sleep 1; open -a "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --args --remote-debugging-port=1337 --remote-allow-origins=http://localhost/; sleep 1; /tmp/WhiteChocolateMacademiaNut/chocolate -d cookies -p 1337
